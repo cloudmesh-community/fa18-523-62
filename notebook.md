@@ -16,6 +16,16 @@ Week 3: 09/03/2018 - 09/09/2018
 
 Week 4: 09/10/2018 - 09/16/2018
 ===============================
+* Attended lecture
+* Downloaded and installed Jabref
+* Created a sample reference in Jabref
+* Created pull requests for 4 technologies assigned to me
+
+Week 5: 09/17/2018 - 09/23/2018
+===============================
+* Completed the Plagiarism test successfully.
+* Updated the Google Sheet
+* Started looking into the first technology assigned to me
 
 
 
