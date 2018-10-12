@@ -4,8 +4,7 @@ owner:
   lastname: "Bahl"
   hid: "fa18-523-62"
   community: "E534"
- 
- technologies:
+technologies:
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/h-store.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/terraform.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/naiad.md
