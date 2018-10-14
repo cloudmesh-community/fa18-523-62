@@ -12,8 +12,8 @@ technologies:
  paper:
   - topic: "big data and streaming"
     url: https://github.com/cloudmesh-community/fa18-523-62/tree/master/paper
-    hid: "fa18-523-62", "fa18-523-69"
+    hid: fa18-523-62 fa18-523-69
  project:
   - topic: "predicting EPL results based to tweets"
     url: https://github.com/cloudmesh-community/fa18-523-62/tree/master/project-report
-    hid: "fa18-523-62", "fa18-523-69"
+    hid: fa18-523-62 fa18-523-69
