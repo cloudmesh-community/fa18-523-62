@@ -11,9 +11,11 @@ technologies:
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/helix.md
 paper:
   - title: "big data and streaming"
+    keyword: Streaming
     url: https://github.com/cloudmesh-community/fa18-523-62/tree/master/paper
     group: fa18-523-62 fa18-523-69
 project:
   - title: "predicting EPL results based to tweets"
+    keyword: Tweets
     url: https://github.com/cloudmesh-community/fa18-523-62/tree/master/project-report
     group: fa18-523-62 fa18-523-69
