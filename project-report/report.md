@@ -1,5 +1,7 @@
 Predict EPL results using Tweets
 ================================
+By: Manek Bahl, Sohan Rai
+
 Abstract:
 =========
 There are a lot of factors that influence the outcome of a football game. Team statistics such as recent form, win-loss ratio, goals scored, goals conceded etc have been proven to be useful in dictating the results of a game. These statistics can be directly obtained from the Official EPL website, however, there are certain other factors such as injuries, general mood of the fanbase and sentiment of the fanbase, preparation by the team etc. which aren’t documented in the official website. Analysis of Twitter data could prove useful in extracting these undocumented features, using NLP models. In this paper, we analyze the usefulness of Tweets in predicting the outcomes of games in the English Premier League. We create three different models to predict the outcomes, the first using the statistics available from the EPL website, the second using only the twitter data and the third with combination of both. If the model improves with the addition of features obtained from the twitter data, we would be able to prove that Twitter data does increase the predictive power of the model. 
