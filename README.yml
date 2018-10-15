@@ -7,7 +7,7 @@ owner:
 technologies:
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/h-store.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/terraform.md
-  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/naiad.md
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/uima.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/helix.md
 paper:
   - title: "big data and streaming"
