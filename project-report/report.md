@@ -1,6 +1,19 @@
-Predict EPL results using Tweets
+Predict EPL results using Tweets :hand: fa18-523-62
 ================================
-By: Manek Bahl, Sohan Rai
+| Manek Bahl, Sohan Udupi Rai
+| mbahl@iu.edu, surai@iu.edu
+| Indiana University
+| hid: fa18-523-62, fa18-523-69
+| github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-62/blob/master/project-report/report.md)
+| code: [:cloud:](https://github.com/cloudmesh-community/fa18-523-62/blob/master/project-code/code)
+
+**:mortar_board: Learning Objectives**
+
+* Learn about extracting Tweets and storing them on MongoDB
+* Run Machine Learning and NLP algorithms on the data to predict soccer results
+---
+
+Keywords: Twitter API, MongoDB, Machine Learning, NLP
 
 Abstract:
 =========
@@ -56,3 +69,28 @@ needed for the first 4 weeks which serve as the training dataset. Supervised
 Machine Learning algorithms are then trained on the training dataset. The
 trained algorithms are then used to predict the unseen results of the last week
 of the dataset which serves as the test data.
+
+
+Requirements
+============
+
+Design 
+======
+
+Architecture
+============
+
+Dataset
+=======
+
+Implementation
+==============
+
+Benchmark
+=========
+
+Conclusion
+==========
+
+Acknowledgement
+===============
