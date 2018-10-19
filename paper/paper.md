@@ -16,24 +16,6 @@ Abstract:
 Introduction:
 =============
 
-Requirements
-============
-
-Design 
-======
-
-Architecture
-============
-
-Dataset
-=======
-
-Implementation
-==============
-
-Benchmark
-=========
-
 Conclusion
 ==========
 
