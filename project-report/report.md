@@ -1,5 +1,5 @@
-Predict EPL results using Tweets :hand: fa18-523-62
-================================
+# Predict EPL results using Tweets :hand: fa18-523-62
+
 | Manek Bahl, Sohan Udupi Rai
 | mbahl@iu.edu, surai@iu.edu
 | Indiana University
@@ -7,16 +7,19 @@ Predict EPL results using Tweets :hand: fa18-523-62
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-523-62/blob/master/project-report/report.md)
 | code: [:cloud:](https://github.com/cloudmesh-community/fa18-523-62/blob/master/project-code/code)
 
+---
+
 **:mortar_board: Learning Objectives**
 
 * Learn about extracting Tweets and storing them on MongoDB
 * Run Machine Learning and NLP algorithms on the data to predict soccer results
+
 ---
 
 Keywords: Twitter API, MongoDB, Machine Learning, NLP
 
-Abstract:
-=========
+## Abstract
+
 There are a lot of factors that influence the outcome of a football game. Team
 statistics such as recent form, win-loss ratio, goals scored, goals conceded etc
 have been proven to be useful in dictating the results of a game. These
@@ -33,8 +36,8 @@ the model improves with the addition of features obtained from the twitter data,
 we would be able to prove that Twitter data does increase the predictive power
 of the model.
 
-Introduction:
-=============
+## Introduction
+
 The English Premier League is one of the most famous and competitive football
 leagues in the world. The season begins in August and ends in May in which 20
 teams compete for the championship. Each team plays each of the other teams
@@ -71,26 +74,18 @@ trained algorithms are then used to predict the unseen results of the last week
 of the dataset which serves as the test data.
 
 
-Requirements
-============
+## Requirements
 
-Design 
-======
+## Design 
 
-Architecture
-============
+## Architecture
 
-Dataset
-=======
+## Dataset
 
-Implementation
-==============
+## Implementation
 
-Benchmark
-=========
+## Benchmark
 
-Conclusion
-==========
+## Conclusion
 
-Acknowledgement
-===============
+## Acknowledgement
