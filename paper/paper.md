@@ -1,5 +1,5 @@
-Big Data and Streaming
-======================
+# Big Data and Streaming
+
 | Manek Bahl, Sohan Udupi Rai
 | mbahl@iu.edu, surai@iu.edu
 | Indiana University
@@ -10,14 +10,14 @@ Big Data and Streaming
 **:mortar_board: Learning Objectives**
 
 
-Abstract:
-=========
+## Abstract
 
-Introduction:
-=============
 
-Conclusion
-==========
+## Introduction
 
-Acknowledgement
-===============
+
+## Conclusion
+
+
+## Acknowledgement
+
