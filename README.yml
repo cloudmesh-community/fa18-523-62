@@ -3,19 +3,20 @@ owner:
   firstname: "Manek"
   lastname: "Bahl"
   hid: "fa18-523-62"
-  community: "e534"
+  community: "i523"
+  semester: fa18
 technologies:
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/h-store.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/terraform.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/uima.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/helix.md
 paper:
-  - title: "big data and streaming"
+  - title: "Big Data and Streaming"
     keyword: Streaming
     url: https://github.com/cloudmesh-community/fa18-523-62/tree/master/paper
     group: fa18-523-62 fa18-523-69
 project:
-  - title: "predicting EPL results based to tweets"
+  - title: "Predicting English Premier League Results Based on Tweets"
     keyword: Tweets
     url: https://github.com/cloudmesh-community/fa18-523-62/tree/master/project-report
     group: fa18-523-62 fa18-523-69
