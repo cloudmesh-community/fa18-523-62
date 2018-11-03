@@ -12,7 +12,7 @@
 
 ## Abstract
 
-In this research paper we are going to discuss stream processing as a big data
+In this research paper we discuss stream processing as a big data
 technology. Data obtained in real-time from various sources are called Data
 Streams; processing and extracting insights from such sources is called Big Data
 Streaming or Real-time streaming analytics. While conventional big-data systems
@@ -227,4 +227,13 @@ imperious that corrective or preventive measures be taken in real time
 
 ## Conclusion
 
+It  can  be  seen  that  systems  have  evolved  from  being  reliant  on
+primitive  methods  such  as  micro-batch  processing  to  true  real-time
+processing  by  adjusting  the  underlying  data  structures  being  used.
+Transaction-log  type  of  architecture  have  gained  prominence,  consequently
+reducing  the  need  for  large  amounts  of  data  being  stored  in
+databases.  Hence  these  newer  stream  processing  technologies  such  as
+Spark  Stream  and  Apache  Kafka  also  have  minimal  storage  and  processing
+power  requirements  while  providing  features  such  as  horizontal
+scalability  and  high  availability.
 
