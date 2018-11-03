@@ -211,6 +211,16 @@ detect issues to give a high availability to its customers. Netflix also uses
 Apache Spark to collect all user activities on the app and analyzes it to come
 up with personalized recommendations.
 
+**Social Media:** With various organizations paying so much attention to reviews
+being posted by users of various Social Websites, it has become increasingly
+important to be able to analyze the public sentiment. Twitter uses Apache
+Storm internally on its various applications for anomaly detection to provide
+high availability to its users.
+
+**Banking and Finance:** One major use case of big data streaming in financial
+domain is fraud detection. If a fraudulent transaction is detected, it is
+imperious that corrective or preventive measures be taken in real time.
+
 ## Conclusion
 
 ## Acknowledgement
