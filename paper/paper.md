@@ -1,4 +1,4 @@
-# Big Data and Streaming :hand: fa18-523-62 fa18-523-69
+# Big Data and Streaming :smiley: fa18-523-62 fa18-523-69
 
 | Manek Bahl, Sohan Udupi Rai
 | mbahl@iu.edu, surai@iu.edu
