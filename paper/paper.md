@@ -9,7 +9,7 @@
 
 **:mortar_board: Learning Objectives** 
 
-:o: first sentens should not hava had in the paper. First sentence is unclear
+:o: first sentens should not have had "In this paper". First sentence is unclear
 
 ## Abstract
 
