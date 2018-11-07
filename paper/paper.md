@@ -9,10 +9,11 @@
 
 **:mortar_board: Learning Objectives** 
 
+:o: first sentens should not hava had in the paper. First sentence is unclear
 
 ## Abstract
 
-In this research paper we discuss stream processing as a big data
+We discuss stream processing as a big data
 technology. Data obtained in real-time from various sources are called Data
 Streams; processing and extracting insights from such sources is called Big Data
 Streaming or Real-time streaming analytics. While conventional big-data systems
@@ -85,6 +86,8 @@ vertical scaling since the new version of the application may pose compatibility
 issues [@fa18-523-62-codelook].
 
 ## Big Data Streaming Architecture and Technologies
+
+:o: paragraph missing
 
 ### Apache Spark
 
@@ -227,7 +230,7 @@ imperious that corrective or preventive measures be taken in real time
 
 ## Conclusion
 
-It  can  be  seen  that  systems  have  evolved  from  being  reliant  on
+It  can  :o: be  seen  that  systems  have  evolved  from  being  reliant  on
 primitive  methods  such  as  micro-batch  processing  to  true  real-time
 processing  by  adjusting  the  underlying  data  structures  being  used.
 Transaction-log  type  of  architecture  have  gained  prominence,  consequently
