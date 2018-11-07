@@ -13,7 +13,7 @@ technologies:
 paper:
   - title: "Big Data and Streaming"
     keyword: Streaming
-    url: https://github.com/cloudmesh-community/fa18-523-62/tree/master/paper
+    url: https://github.com/cloudmesh-community/fa18-523-62/blob/master/paper/paper.md
     group: fa18-523-62 fa18-523-69
 project:
   - title: "Predicting English Premier League Results Based on Tweets"
