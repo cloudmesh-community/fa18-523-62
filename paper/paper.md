@@ -229,7 +229,13 @@ imperious that corrective or preventive measures be taken in real time
 
 ## Conclusion
 
-It  can  :o: be  seen  that  systems  have  evolved  from  being  reliant  on
+:o: there are space issues here 
+
+:o: I suggest also to remove the conclusion as it is unclear and instead merge it into the introduction. THis paper is too short to justify the conclusion section
+
+
+
+It  can  [:o: citation missing] be  seen  that  systems  have  evolved  from  being  reliant  on
 primitive  methods  such  as  micro-batch  processing  to  true  real-time
 processing  by  adjusting  the  underlying  data  structures  being  used.
 Transaction-log  type  of  architecture  have  gained  prominence,  consequently
