@@ -1,4 +1,4 @@
-# Big Data and Streaming :smiley: fa18-523-62 fa18-523-69
+# Big Data and Streaming :wave: :exclamation: fa18-523-62 fa18-523-69
 
 | Manek Bahl, Sohan Udupi Rai
 | mbahl@iu.edu, surai@iu.edu
@@ -7,9 +7,8 @@
 
 | paper: [:cloud:](https://github.com/cloudmesh-community/fa18-523-62/blob/master/paper/paper.md)
 
-**:mortar_board: Learning Objectives** 
 
-:o: first sentens should not have had "In this paper". First sentence is unclear
+:o: please merge abstract amd introduction. This paper is too short to justify an abstract
 
 ## Abstract
 
