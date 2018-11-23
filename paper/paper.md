@@ -7,13 +7,9 @@
 
 | paper: [:cloud:](https://github.com/cloudmesh-community/fa18-523-62/blob/master/paper/paper.md)
 
-
-:o: please merge abstract amd introduction. This paper is too short to justify an abstract
-
 ## Abstract
 
-We discuss stream processing as a big data
-technology. Data obtained in real-time from various sources are called Data
+Data obtained in real-time from various sources are called Data
 Streams; processing and extracting insights from such sources is called Big Data
 Streaming or Real-time streaming analytics. While conventional big-data systems
 can handle near real-time data by performing micro-batch processing, they have
@@ -22,8 +18,6 @@ We look at various technologies available today for handling data streams and
 see how each of these deal with the challenges associated with the task. The
 paper then looks at some real-life examples exploring the implementation of Big
 data streaming systems in various domains.
-
-## Introduction
 
 Deriving insights from data has always been the key requirement for
 organizations to gain edge over competitors in the market. But there are certain
@@ -65,8 +59,8 @@ is done in real-time, there is no need for the entire generated data to be
 stored in the system. Only the useful data can be stored.  
 3) Stream Processing requires less hardware capabilities compared to
 Batch Processing since the amount of data on which analysis is performed is
-small compared to the large volume of data in Batch Processing [@fa18-523-62-
-medium-stream-processing].
+small compared to the large volume of data in Batch Processing 
+[@fa18-523-62-medium-stream-processing].
 
 ## Challenges in Stream Processing
 
@@ -86,7 +80,11 @@ issues [@fa18-523-62-codelook].
 
 ## Big Data Streaming Architecture and Technologies
 
-:o: paragraph missing
+Over the recent years, various technologies have been developed for Stream 
+Processing. The architecture adopted by these technologies often differ from 
+one another, making some of these more suitable for some applications than 
+the other. Some of the prominent technologies for Stream Processing and the 
+architecture they use, are discussed below.
 
 ### Apache Spark
 
@@ -227,21 +225,4 @@ domain is fraud detection. If a fraudulent transaction is detected, it is
 imperious that corrective or preventive measures be taken in real time
 [@fa18-523-62-www-dezyre-use-case].
 
-## Conclusion
-
-:o: there are space issues here 
-
-:o: I suggest also to remove the conclusion as it is unclear and instead merge it into the introduction. THis paper is too short to justify the conclusion section
-
-
-
-It  can  [:o: citation missing] be  seen  that  systems  have  evolved  from  being  reliant  on
-primitive  methods  such  as  micro-batch  processing  to  true  real-time
-processing  by  adjusting  the  underlying  data  structures  being  used.
-Transaction-log  type  of  architecture  have  gained  prominence,  consequently
-reducing  the  need  for  large  amounts  of  data  being  stored  in
-databases.  Hence  these  newer  stream  processing  technologies  such  as
-Spark  Stream  and  Apache  Kafka  also  have  minimal  storage  and  processing
-power  requirements  while  providing  features  such  as  horizontal
-scalability  and  high  availability.
 
