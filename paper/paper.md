@@ -7,7 +7,7 @@
 
 | paper: [:cloud:](https://github.com/cloudmesh-community/fa18-523-62/blob/master/paper/paper.md)
 
-## Abstract
+## Introduction
 
 Data obtained in real-time from various sources are called Data
 Streams; processing and extracting insights from such sources is called Big Data
