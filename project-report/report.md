@@ -1,4 +1,4 @@
-# Predict EPL results using Tweets :hand: fa18-523-62
+# Predict EPL results using Tweets :hand: fa18-523-62 fa18-523-69
 
 | Manek Bahl, Sohan Udupi Rai
 | mbahl@iu.edu, surai@iu.edu
@@ -74,17 +74,17 @@ trained algorithms are then used to predict the unseen results of the last week
 of the dataset which serves as the test data.
 
 
-## Requirements
+## MongoDB
+### Local Installation
+### Interaction with Python
 
-## Design 
+## Tweet Extraction
+### Tweepy and its challenges
+### Selenium
 
-## Architecture
+## Machine Learning Approaches
 
-## Dataset
-
-## Implementation
-
-## Benchmark
+## Results
 
 ## Conclusion
 
