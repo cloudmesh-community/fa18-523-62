@@ -128,10 +128,10 @@ for query in queries:
          tweet_id= time[index1+22:index2-2]
          index3 = time.find('title')
          index4 = time.find('span')
-         timestamp = time[index3+7:index4-5]
+         #timestamp = time[index3+7:index4-5]
          message = content.find('div',{'class':'js-tweet-text-container'}).text.replace("\n"," ").strip()
          hashtags = " ".join(re.findall("#[a-zA-Z]+", message))
         
-         tweet = {'id':tweet_id, 'username':user, 'text':message, 'hashtags':hashtags,'used_hashtag':query[3:],'created':timestamp}
+         tweet = {'id':tweet_id, 'username':user, 'text':message, 'hashtags':hashtags,'used_hashtag':query[3:],'created':start, 'dateid':start[0:4]+start[5:7]+start[8:10]}
         
          collection.save(tweet)
