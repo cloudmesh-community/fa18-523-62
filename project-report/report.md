@@ -73,19 +73,23 @@ Machine Learning algorithms are then trained on the training dataset. The
 trained algorithms are then used to predict the unseen results of the last week
 of the dataset which serves as the test data.
 
+## Related Work
 
-## MongoDB
-### Local Installation
-### Interaction with Python
+## Implementation
+### MongoDB
+#### Local Installation
+#### Interaction with Python
 
-## Tweet Extraction
-### Tweepy and its challenges
-### Selenium
+### Tweet Extraction
+#### Tweepy and its challenges
+#### Selenium
 
-## Machine Learning Approaches
+### Machine Learning Approaches
 
 ## Results
 
 ## Conclusion
 
 ## Acknowledgement
+
+## Work Breakdown
