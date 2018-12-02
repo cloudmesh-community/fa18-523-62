@@ -76,9 +76,68 @@ of the dataset which serves as the test data.
 ## Related Work
 
 ## Implementation
+
+### Data
+
+The tweets were extracted using web scraping tool with Python called Selenium
+and were stored in MongoDB over the course of almost 3 months from September 2018
+to November 2018. We were able to collect more than 100,000 tweets combined for 
+20 premier league teams using the team specific hashtags. Examples of hastags 
+used are: #AFCB for Bournemouth, #Arsenalfc and #Gunners for Arsenal, #MANU and 
+#RedDevils for Manchester United etc. In total we had 50 hashtags overall for 
+different teams. 
+
+The statistical football data for this season was taken from --. The data contains
+all individual match results for this season with number of goals scored by each 
+team, number of shots, number of shots on target, corners etc. The data also 
+contained win-loss odd prediction for each time according to various betting 
+websites. The results were given as Home team Win, Away Team Win or Draw.
+
+This data however was match wise which isn't useful for our machine learning 
+algorithm. So there was a lot of data manipulation required to get the data in the
+format we required. ------
+
 ### MongoDB
+
+Developed by MongoDB Inc., MongoDB is a NoSQL Database system which stores data
+as documents. The documents are stored in JSON format which means that various
+documents can have their own different format and data structure. The structure
+of the existing documents as well can be changed later in time. Another
+advantage that this structure provides is that, it makes mapping of different
+objects in the application code much easier. High availability and horizontal
+scaling are in built features of MongoDB due to it being a distributed database.
+It was written in C, C++ and Javascript and can be used on various operating
+systems such as Windows, iOS, Linux and Solaris. 
+
+However, owing to default security configuration, MongoDB has been rendered to 
+a lot of data thefts as it allows full database access to all.  [Wikipedia]
+
 #### Local Installation
+
+We used the MongoDB Community Edition on Windows and MacOS systems. The below 
+steps were followed for MacOS using Homebrew:
+
+Updated the HomeBrew’s version by the following shell command
+```bash
+brew update
+```
+Then use the below command to install the mongodb binary files
+```bash
+brew install mongodb
+```
+To run MongoDB the below command was used
+```bash
+<path to the binary files>mongod
+```
+Once MongoDB is up and running we should be able to see the following line in 
+the shell or terminal window
+```bash
+[initandlisten] waiting for connections on port 27017
+```
+
 #### Interaction with Python
+
+
 
 ### Tweet Extraction
 #### Tweepy and its challenges
