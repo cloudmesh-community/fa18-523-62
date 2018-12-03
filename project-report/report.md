@@ -198,6 +198,40 @@ from selenium import webdriver browser = webdriver.Chrome(r'<location of the
 WebDriver>)
 ```
 
+### Natural Language Processing
+
+Natural Language Processing is an integral part of this project as we need to
+extract the general sentiment of the team's fans from the tweets they have
+posted. There are various tools available that can be integrated with Python
+which can be used to provide the overall sentiment of a sentence. One such tool
+is TextBlob. It is a python specific library which is built on the existing NLTK
+but has a much simpler interface to use and is much faster.
+
+```bash
+pip install -U textblob python -m textblob.download_corpora
+```
+
+It is adept in performing a lot of NLP tasks such as POS tagging, word
+tokenization, Noun Phrase extraction, spelling correction and obviously
+sentiment analysis which we are interested in.  Sentiment analysis is the
+process of extracting the attitude, mood or the emotion of the writer and
+judging whether the sentence written is overall positive, negative or neutral.
+The sentiment function gives us the overall sentiment of the sentence in the
+range [1,-1], where 1 is the positive sentiment and -1 is the negative
+sentiment.
+
+```bash
+#Example: 
+from textblob import TextBlob 
+text = 'Big Data is exciting.' 
+blob = TextBlob(text) 
+print(blob.sentiment.polarity) 
+>> 0.15
+```
+
+We use TextBlob on all the tweets captured for all teams and create a new
+feature vector which is the averaged sentiment score of all tweets for a team
+for a given week.
 
 ### Machine Learning Approaches
 
