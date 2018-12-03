@@ -25,7 +25,7 @@ statistics such as recent form, win-loss ratio, goals scored, goals conceded etc
 have been proven to be useful in dictating the results of a game. These
 statistics can be directly obtained from the Official EPL website, however,
 there are certain other factors such as injuries, general mood of the fanbase
-and sentiment of the fanbase, preparation by the team etc. which aren’t
+and sentiment of the fanbase, preparation by the team etc. which aren't
 documented in the official website. Analysis of Twitter data could prove useful
 in extracting these undocumented features, using NLP models. In this paper, we
 analyze the usefulness of Tweets in predicting the outcomes of games in the
@@ -117,7 +117,7 @@ a lot of data thefts as it allows full database access to all.  [Wikipedia]
 We used the MongoDB Community Edition on Windows and MacOS systems. The below 
 steps were followed for MacOS using Homebrew:
 
-Updated the HomeBrew’s version by the following shell command
+Updated the HomeBrew's version by the following shell command
 ```bash
 brew update
 ```
@@ -144,9 +144,9 @@ extract tweets for any given hashtag or for a particular username and perform
 various kinds of analysis. For various use cases, Twitter provides different
 types of access levels with the business version being called the Enterprise API
 which large scale business use for their analysis. To obtain the developers
-access, one must own a twitter account and apply for a developer’s API access.
+access, one must own a twitter account and apply for a developer's API access.
 The form usually consists of basic user information and justifying the purpose
-of obtaining a developer’s access for the API. This information is then reviewed
+of obtaining a developer's access for the API. This information is then reviewed
 by Twitter and assigns 4 unique keys for each user which are needed to use the
 API. The keys consist of consumer key, consumer secret, access token key and
 access token secret. Once these are obtained a dedicated python version of
@@ -166,6 +166,38 @@ before 7 days, Tweepy cannot be used. However, for our project we need tweets
 starting from August 10, so using Tweepy is not feasible for our project.
 
 #### Selenium
+
+Since the data we needed from Twitter could not be extracted using official
+twitter API due to the 7-day restriction, we had to try another approach. We
+scraped data from Twitter using the selenium package in python. Selenium
+essentially is a package which is used to automate the interaction of python
+with a web browser of our choice.
+
+To use selenium, we needed to install a WebDriver for the specific web browser,
+Firefox in our case. The below shell script can be used to install the WebDriver
+for Firefox.
+
+```bash
+wget https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodrive
+r-v0.19.1-linux64.tar.gz tar xvfz geckodriver-v0.19.1-linux64.tar.gz mv
+geckodriver ~/.local/bin
+```
+
+Once the WebDriver is installed, we can install Selenium package just as
+installing any other python package.
+
+```bash
+pip install selenium
+```
+
+Then in the python code, we can just point to the location of the WebDriver to
+successfully run selenium and scrape data.
+
+```bash
+from selenium import webdriver browser = webdriver.Chrome(r'<location of the
+WebDriver>)
+```
+
 
 ### Machine Learning Approaches
 
