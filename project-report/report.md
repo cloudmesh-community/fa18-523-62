@@ -135,12 +135,36 @@ the shell or terminal window
 [initandlisten] waiting for connections on port 27017
 ```
 
-#### Interaction with Python
-
-
-
 ### Tweet Extraction
+
 #### Tweepy and its challenges
+
+Twitter provides dedicated API for developers and researchers to be able to
+extract tweets for any given hashtag or for a particular username and perform
+various kinds of analysis. For various use cases, Twitter provides different
+types of access levels with the business version being called the Enterprise API
+which large scale business use for their analysis. To obtain the developers
+access, one must own a twitter account and apply for a developer’s API access.
+The form usually consists of basic user information and justifying the purpose
+of obtaining a developer’s access for the API. This information is then reviewed
+by Twitter and assigns 4 unique keys for each user which are needed to use the
+API. The keys consist of consumer key, consumer secret, access token key and
+access token secret. Once these are obtained a dedicated python version of
+Twitter API called Tweepy can be used.
+
+Tweepy is an easily installable python package which leverages the Twitter API
+using Python. Tweepy can be easily installed as other python packages using pip
+command in the command line.     
+```bash
+pip install tweepy
+```
+The package can then be imported in python IDE and authentication between python
+and Twitter API can then be established using the keys obtained earlier.
+
+Tweepy though can be used only to extract tweets only for 7 days. For tweets
+before 7 days, Tweepy cannot be used. However, for our project we need tweets
+starting from August 10, so using Tweepy is not feasible for our project.
+
 #### Selenium
 
 ### Machine Learning Approaches
