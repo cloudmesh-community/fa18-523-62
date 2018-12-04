@@ -300,4 +300,13 @@ us:
 
 ## Acknowledgement
 
+We would like to thank Professor Gregor von Laszweski for all his support in this
+project and his material which helped us install MongoDB. We would also like to 
+acknowledge the TAs for their extended support and guidance thoughout.
+
 ## Work Breakdown
+
+Sohan and Manek worked on this report equally on this report. The tweet extraction part
+was divided equally between the two of us on our respective MongoDB localhost. 
+The responsibility of data manipulation and the NLP was handled by Sohan and Manek 
+completed the machine learning part of the project.
