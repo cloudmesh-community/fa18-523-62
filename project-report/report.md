@@ -63,17 +63,29 @@ coaching style etc. which are subjective and hence not obtainable from any other
 statistical sources.
 
 For each team playing in the upcoming weekend fixtures, we are using Twitter
-streaming API in Python, to monitor and extract all tweets over the course of
-the entire week. This is repeated for 4-6 weeks in succession, to build the
-corpus of tweets. These tweets are fed to Natural Language Processing models to
-create features which serve as the predictors in the dataset. The corresponding
-results of the matches will serve as the class labels. The results are only
-needed for the first 4 weeks which serve as the training dataset. Supervised
-Machine Learning algorithms are then trained on the training dataset. The
-trained algorithms are then used to predict the unseen results of the last week
-of the dataset which serves as the test data.
+scraping API in Python called Selenium, to monitor and extract all tweets over 
+the course of the entire week. This is repeated for first 12 gameweeks, to build 
+the corpus of tweets. These tweets are fed to Natural Language Processing tool to
+create a feature which serve as the predictor in the dataset. The corresponding
+results of the matches will serve as the class labels. With dataset with the 
+statistics and tweet feature combined we run machine learning predictive 
+algorithms to predict the results of the 13th gameweek.
 
 ## Related Work
+
+There were a few papers in which an attempt has been made to predict soccer 
+results using machine learning techniques but just using the statistical data. 
+However, owing to the intense competition in the English Premier league and the 
+unpredictable nature of soccer results a great accuracy was never achieved. In
+Timmaraju et al. they used game statistics such as number of goals, shots on 
+target, corners etc . They added another feature which was based on the recent form 
+of the team in the last 5 matches. They were able to achieve the maximum accuracy
+of 66%. 
+
+We however, didn't find any other paper which included external feature such as 
+tweet sentiment. We are not too concerned about the accuracy of the models, but we 
+tried to leverage the usability of tweet data and check if it improves our model in 
+any way.
 
 ## Implementation
 
@@ -87,11 +99,12 @@ used are: #AFCB for Bournemouth, #Arsenalfc and #Gunners for Arsenal, #MANU and
 #RedDevils for Manchester United etc. In total we had 50 hashtags overall for 
 different teams. 
 
-The statistical football data for this season was taken from --. The data contains
-all individual match results for this season with number of goals scored by each 
-team, number of shots, number of shots on target, corners etc. The data also 
-contained win-loss odd prediction for each time according to various betting 
-websites. The results were given as Home team Win, Away Team Win or Draw.
+The statistical football data for this season was taken from English Football 
+Data Website [fa-523-62-football-data]. The data contains all individual match 
+results for this season with number of goals scored by each  team, number of shots, 
+number of shots on target, corners etc. The data also  contained win-loss odd 
+prediction for each time according to various betting websites. The results were 
+given as Home team Win, Away Team Win or Draw.
 
 This data however was match wise which isn't useful for our machine learning 
 algorithm. So there was a lot of data manipulation required to get the data in the
@@ -110,7 +123,8 @@ It was written in C, C++ and Javascript and can be used on various operating
 systems such as Windows, iOS, Linux and Solaris. 
 
 However, owing to default security configuration, MongoDB has been rendered to 
-a lot of data thefts as it allows full database access to all.  [Wikipedia]
+a lot of data thefts as it allows full database access to all
+[fa-523-62-wikipedia-mongoDB].  
 
 #### Local Installation
 
@@ -130,7 +144,7 @@ To run MongoDB the below command was used
 <path to the binary files>mongod
 ```
 Once MongoDB is up and running we should be able to see the following line in 
-the shell or terminal window
+the shell or terminal window[fa-523-62-docs-mongoDB].
 ```bash
 [initandlisten] waiting for connections on port 27017
 ```
@@ -191,7 +205,7 @@ pip install selenium
 ```
 
 Then in the python code, we can just point to the location of the WebDriver to
-successfully run selenium and scrape data.
+successfully run selenium and scrape data[fa-523-62-www-realpython].
 
 ```bash
 from selenium import webdriver browser = webdriver.Chrome(r'<location of the
@@ -205,7 +219,7 @@ extract the general sentiment of the team's fans from the tweets they have
 posted. There are various tools available that can be integrated with Python
 which can be used to provide the overall sentiment of a sentence. One such tool
 is TextBlob. It is a python specific library which is built on the existing NLTK
-but has a much simpler interface to use and is much faster.
+but has a much simpler interface to use and is much faster[].
 
 ```bash
 pip install -U textblob python -m textblob.download_corpora
@@ -231,7 +245,7 @@ print(blob.sentiment.polarity)
 
 We use TextBlob on all the tweets captured for all teams and create a new
 feature vector which is the averaged sentiment score of all tweets for a team
-for a given week.
+for a given week[fa-523-62-www-analyticsvidhya].
 
 ### Machine Learning Approaches
 
