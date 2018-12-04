@@ -235,6 +235,51 @@ for a given week.
 
 ### Machine Learning Approaches
 
+Once our data is ready, we needed to feed this data to various machine learning
+prediction algorithms to predict the outcome of each match in the test dataset.
+Built-in python package Scikit-Learn was used to run these algorithms.
+
+#### Random Forest Classifier
+
+In Random forests, multiple random decision trees are created using only a small
+random subset of the features. Samples of the training dataset are taken with
+replacement, but the trees are constructed in a way that reduces the correlation
+between individual classifiers. Specifically, rather than greedily choosing the
+best split point in the construction of the tree, only a random subset of
+features is considered for each split. Using Random Forests also removes the
+necessity of pruning trees which would otherwise be required to prevent over-
+fitting of the model to the training dataset.
+
+There were few parameters that we had to set to achieve best results which are
+shown in the snippet below.
+
+
+#### Logistic Regression
+
+Logistic regression is a classification algorithm used to assign observations to
+a discrete set of classes. Unlike linear regression which outputs continuous
+numeric values, logistic regression transforms its output using the logistic
+sigmoid function. The function maps any real value into another value between 0
+and 1. Since this is a 3-class problem, we need to use the multinomial logistic
+regression.
+
+#### XGBoost
+
+Boosting is a sequential technique which works on the principle of ensemble. It
+combines a set of weak learners and delivers improved prediction accuracy. At
+any instant t, the model outcomes are weighed based on the outcomes of previous
+instant t-1. The outcomes predicted correctly are given a lower weight and the
+ones miss-classified are weighted higher. This technique is followed for a
+classification problem while a similar technique is used for regression. 
+XGBoost(eXtreme Gradient Boosting) is an advanced implementation of gradient 
+boosting algorithm. XGBoost is well known because of the in-built cross-validation 
+and regularization feature that helps reduce overfitting. It also deals with 
+missing values in a very effective way.
+
+Below snippet was used to run XGBoost with the parameters that were defined by
+us:
+
+
 ## Results
 
 ## Conclusion
