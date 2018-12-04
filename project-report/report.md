@@ -296,7 +296,27 @@ us:
 
 ## Results
 
-## Conclusion
+We ran our three machine learning algorithms with dataset with and without the 
+feature extracted from twitter sentiments. We can see the accuracy of each of 
+the algorithms in the table below. 
+  
+|                   |   With Tweets  | Without Tweets  |
+|-------------------|----------------|-----------------|
+|Random Forest      |       60%      |      50%        |
+|XGboost            |       40%      |      40%        |
+|Logistic Regression|       50%      |      50%        |
+
+We can see that there is no definite impact created by adding the feature containing 
+the tweet sentiments. In some of the cases it it improves the prediction accuracy 
+but in other cases it doesn't. However, considering all factors Random Forest gives 
+us the best prediction accuracy of 60% with tweets.
+
+## Conclusion and future work
+
+Based on the above results, there is no evident increase in the accuracy by adding 
+the tweet sentiments. This might have been due to the quality of tweets that were 
+extracted. So as part of future work we need to plan to somehow be able to remove 
+unwanted tweets and keep only meaningful ones. 
 
 ## Acknowledgement
 
