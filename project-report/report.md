@@ -78,14 +78,14 @@ results using machine learning techniques but just using the statistical data.
 However, owing to the intense competition in the English Premier league and the 
 unpredictable nature of soccer results a great accuracy was never achieved. In
 Timmaraju et al. they used game statistics such as number of goals, shots on 
-target, corners etc . They added another feature which was based on the recent form 
-of the team in the last 5 matches. They were able to achieve the maximum accuracy
-of 66%. 
+target, corners etc[fa-523-62-stanford-timmaraju]. They added another feature 
+which was based on the recent form of the team in the last 5 matches. They were 
+able to achieve the maximum accuracy of 66%. 
 
 We however, didn't find any other paper which included external feature such as 
 tweet sentiment. We are not too concerned about the accuracy of the models, but we 
-tried to leverage the usability of tweet data and check if it improves our model in 
-any way.
+tried to leverage the usability of tweet data and check if it improves our model 
+in any way.
 
 ## Implementation
 
