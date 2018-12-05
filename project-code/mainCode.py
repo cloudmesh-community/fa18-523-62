@@ -1,11 +1,12 @@
 import pandas as pd
 from textblob import TextBlob
-#from sklearn import model_selection
 from sklearn.ensemble import RandomForestClassifier
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.linear_model import LogisticRegression
-data3= pd.read_csv("Consolidated.csv")
+data1= pd.read_csv("consolidated_tweets1.csv")
+data2= pd.read_csv("consolidated_tweets2.csv")
+data3= data1.append(data2)
 
 #Create a dictionary to map Hashtags to team name.
 dic = {'AFCB':'Bournemouth',
@@ -61,7 +62,7 @@ dic = {'AFCB':'Bournemouth',
 
 data3.replace({"used_hashtag": dic}, inplace=True)
 
-###############################################################
+##################  import the game stats data  #####################
 
 odds_data= pd.read_csv("soccerData.csv")
 main_data= data3
@@ -91,7 +92,7 @@ for gw in range(1,13):
         odds_data.loc[(odds_data['Gameweek']==gw) & (odds_data['HomeTeam']==team),'homesentiment'] = final_data.loc[(final_data['Gameweek']==gw) & (final_data['used_hashtag']==team),'sentiment'].values[0]
         odds_data.loc[(odds_data['Gameweek']==gw) & (odds_data['AwayTeam']==team),'awaysentiment'] = final_data.loc[(final_data['Gameweek']==gw) & (final_data['used_hashtag']==team),'sentiment'].values[0]
 
-########### Creating the cumsum dictionary
+########### Creating the cumsum dictionaries to calculate the per-game average stats for the teams prior to each match
 odds_data['goals_hm_cm']=0
 odds_data['goals_away_cm']=0
 odds_data['shots_hm_cm']=0
