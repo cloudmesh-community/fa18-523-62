@@ -106,9 +106,30 @@ number of shots on target, corners etc. The data also  contained win-loss odd
 prediction for each time according to various betting websites. The results were 
 given as Home team Win, Away Team Win or Draw.
 
-This data however was match wise which isn't useful for our machine learning 
-algorithm. So there was a lot of data manipulation required to get the data in the
-format we required. ------
+The above 2 datasets are seperately imported by our main code and the following 
+processing is done to get them into the required format:
+
+The tweet text imported from the database (or the CSV file in the case of this 
+demo) are fed to the TextBlob method from the python library 'textblob' and the 
+'polarity' attribute of the 'sentiment' attribute is extracted to get the overall 
+sentiment of each tweet. These individual tweet sentiment scores are then grouped 
+and averaged for each team into weekly batches from saturday through friday. We 
+now have the average sentiment of tweets for each team leading upto each of 
+weekend fixtures. This is added as one of the 'predictors' for the dataset to be 
+fed to the machine learning algorithms.
+
+Next, the statstical dataset (along with the outcomes of each match) is manipulated
+ using for loops and dictionaries in Python so that the goals, shots, shots on target, 
+fouls, corners, yellow cards and red cards are converted to their coresponding 
+per match averages prior to the game. The odds data obtained are kept as obtained. 
+These per game average values generated along with the odds data serve as the other 
+'predictors' in the dataset. 
+
+The outcome of each of the game labelled as 'w' for a win, 'd' for a draw and 'l' 
+for a loss act as the 'class label' for the prediction algorithm in the dataset. The 
+rows for data corresponding to gameweek 13 is seperated and stripped off the class 
+label column, this acts as the test dataset. The rest of he data (including the 
+'result' column) acts as the train dataset for the prediction algorithms.
 
 ### MongoDB
 
