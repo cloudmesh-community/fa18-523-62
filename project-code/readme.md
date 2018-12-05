@@ -38,7 +38,7 @@ Since the total number of tweets collected for 20 teams over 13 weeks is nearly 
 
 NOTE:
 Although the extraction of tweets into the database is not part of the demo, we have included the code to do it in the file 'twitterToMongo.py'.
-#If wants to run the project from end to end (Extraction of tweets, storing in the database, and the subsequent prediction algorithm), it would take about 7 hours to complete the process and 
+If wants to run the project from end to end (Extraction of tweets, storing in the database, and the subsequent prediction algorithm), it would take about 7 hours to complete the process and 
 
 1.	Clone our project repository from GitHub using the following command into a directory
 
