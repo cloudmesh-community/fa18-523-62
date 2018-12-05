@@ -1,4 +1,4 @@
-# Predict EPL results using Tweets :hand: fa18-523-62 fa18-523-69
+# Predict EPL results using Tweets :smiley: fa18-523-62 fa18-523-69
 
 | Manek Bahl, Sohan Udupi Rai
 | mbahl@iu.edu, surai@iu.edu
