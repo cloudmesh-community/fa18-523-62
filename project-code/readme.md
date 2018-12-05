@@ -27,9 +27,13 @@ The following are the requirements for this project.
 ## Installation:
 
 Install the above mentioned Python libraries using the pip command on the command as follows:
+
 pip install Pandas
+
 pip install TextBlob
+
 pip install Sklearn
+
 pip install xgboost 
 
 ### Data Setup:
