@@ -30,7 +30,7 @@ Each document in the collection has 7 attributes as created by a python code -
 The following are the requirements for this project.
   1.	Python 3
   2.	Python libraries - Pandas, TextBlob, Sklearn, xgboost
-  3.  Mongodb on the local machine with a database named 'twitterdb' installed
+  3.  Mongodb on the local machine with a database named 'twitterdb' installed ( Not necessary for evaluation since extraction takes over 7 hours, the data has been stored in a .CSV file )
 
 ## Installation:
 
@@ -46,11 +46,11 @@ pip install xgboost
 
 ### Data Setup:
 
-Since the total number of tweets collected for 20 teams over 13 weeks is nearly ~ 150000, the tweet extraction process takes around 7 hours and hence cannot be made part of the demo. Also, as the MongoDB database instance used to store the collected tweets is a local one, we have extracted it into the file 'consolidated_tweets.csv' which serves as the input for our main program which performs sentiment analysis on the tweets and uses it along with other cumulative stats as predictors for the training the machine learning algorithms. 
+Since the total number of tweets collected for 20 teams over 13 weeks is nearly ~ 150000, the tweet extraction process takes around 7 hours and hence cannot be made part of the demo. Also, as the MongoDB database instance used to store the collected tweets is a local one, we have extracted it into the files 'consolidated_tweets1.csv' and 'consolidated_tweets2.csv' which serves as the input for our main program which performs sentiment analysis on the tweets and uses it along with other cumulative stats as predictors for the training the machine learning algorithms.
 
 NOTE:
-Although the extraction of tweets into the database is not part of the demo, we have included the code to do it in the file 'twitterToMongo.py'.
-If wants to run the project from end to end (Extraction of tweets, storing in the database, and the subsequent prediction algorithm), it would take about 7 hours to complete the process and 
+
+Although the extraction of tweets into the database is not part of the demo, we have included the code to do it in the file 'twitterToMongo.py'. ( The process would take about 7 hours and would require a local instance of MongoDB database installed. ). 
 
 1.	Clone our project repository from GitHub using the following command into a directory
 
