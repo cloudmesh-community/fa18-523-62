@@ -288,6 +288,12 @@ fitting of the model to the training dataset.
 There were few parameters that we had to set to achieve best results which are
 shown in the snippet below.
 
+```bash
+model_RF = RandomForestClassifier(n_estimators=num_trees, max_features=max_features,max_depth=max_depth,class_weight="balanced")
+model_RF.fit(X,Y)
+y_pred_RF=model_RF.predict(Xtest)
+```
+
 
 #### Logistic Regression
 
@@ -313,6 +319,12 @@ missing values in a very effective way.
 
 Below snippet was used to run XGBoost with the parameters that were defined by
 us:
+
+```bash
+model_xgb = XGBClassifier(max_depth= 3)
+model_xgb.fit(X2, Y)
+y_pred_XGB = model_xgb.predict(Xtest2)
+```
 
 
 ## Results
