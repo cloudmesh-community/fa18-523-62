@@ -78,7 +78,7 @@ results using machine learning techniques but just using the statistical data.
 However, owing to the intense competition in the English Premier league and the 
 unpredictable nature of soccer results a great accuracy was never achieved. In
 Timmaraju et al. they used game statistics such as number of goals, shots on 
-target, corners etc[fa-523-62-stanford-timmaraju]. They added another feature 
+target, corners etc [@fa-523-62-stanford-timmaraju]. They added another feature 
 which was based on the recent form of the team in the last 5 matches. They were 
 able to achieve the maximum accuracy of 66%. 
 
@@ -100,7 +100,7 @@ used are: #AFCB for Bournemouth, #Arsenalfc and #Gunners for Arsenal, #MANU and
 different teams. 
 
 The statistical football data for this season was taken from English Football 
-Data Website [fa-523-62-football-data]. The data contains all individual match 
+Data Website [@fa-523-62-football-data]. The data contains all individual match 
 results for this season with number of goals scored by each  team, number of shots, 
 number of shots on target, corners etc. The data also  contained win-loss odd 
 prediction for each time according to various betting websites. The results were 
@@ -145,7 +145,7 @@ systems such as Windows, iOS, Linux and Solaris.
 
 However, owing to default security configuration, MongoDB has been rendered to 
 a lot of data thefts as it allows full database access to all
-[fa-523-62-wikipedia-mongoDB].  
+[@fa-523-62-wikipedia-mongoDB].  
 
 #### Local Installation
 
@@ -165,7 +165,7 @@ To run MongoDB the below command was used
 <path to the binary files>mongod
 ```
 Once MongoDB is up and running we should be able to see the following line in 
-the shell or terminal window[fa-523-62-docs-mongoDB].
+the shell or terminal window [@fa-523-62-docs-mongoDB].
 ```bash
 [initandlisten] waiting for connections on port 27017
 ```
@@ -226,7 +226,7 @@ pip install selenium
 ```
 
 Then in the python code, we can just point to the location of the WebDriver to
-successfully run selenium and scrape data[fa-523-62-www-realpython].
+successfully run selenium and scrape data [@fa-523-62-www-realpython].
 
 ```bash
 from selenium import webdriver browser = webdriver.Chrome(r'<location of the
@@ -240,7 +240,7 @@ extract the general sentiment of the team's fans from the tweets they have
 posted. There are various tools available that can be integrated with Python
 which can be used to provide the overall sentiment of a sentence. One such tool
 is TextBlob. It is a python specific library which is built on the existing NLTK
-but has a much simpler interface to use and is much faster[].
+but has a much simpler interface to use and is much faster.
 
 ```bash
 pip install -U textblob python -m textblob.download_corpora
@@ -266,7 +266,7 @@ print(blob.sentiment.polarity)
 
 We use TextBlob on all the tweets captured for all teams and create a new
 feature vector which is the averaged sentiment score of all tweets for a team
-for a given week[fa-523-62-www-analyticsvidhya].
+for a given week [@fa-523-62-www-analyticsvidhya].
 
 ### Machine Learning Approaches
 
